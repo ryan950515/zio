@@ -25,7 +25,7 @@
                 errBack = function(error) {
                     console.log("Video capture error: ", error.code);
                 };
-
+        alert(navigator.getUserMedia);
         // Put video listeners into place
         if(navigator.getUserMedia) { // Standard
             navigator.getUserMedia(videoObj, function(stream) {
